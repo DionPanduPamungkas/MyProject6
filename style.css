@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat';
+	scroll-behavior: smooth;
+	font-family: 'Montserrat', sans-serif;
+	/* font-family: 'Poppins', sans-serif; */
+}
+body {
+	background: #111;
+}
+section {
+	position: relative;
+	padding: 100px;
+}
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	/*padding: 20px 0;*/
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 100000;
+}
+.header a.logo {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.2em;
+}
+.header .toggle img {
+	max-width: 40px;
+	cursor: pointer;
+}
+.banner {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.banner::before {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 800px;
+	z-index: 1;
+	background: linear-gradient(to top, #111 ,transparent);
+}
+.banner .content {
+	position: relative;
+	max-width: 900px;
+	text-align: center;
+	z-index: 1;
+}
+.banner .content h2 {
+	font-size: 4.5em;
+	color: #fff;
+	font-weight: 800;
+	margin-bottom: 15px;
+}
+.banner .content p {
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: lighter;
+}
+.btn {
+	position: relative;
+	display: inline-block;
+	margin-top: 30px;
+	padding: 10px 30px;
+	background: #fff;
+	color: #333;
+	text-decoration: none;
+	/* text-transform: uppercase; */
+	font-size: 1.1em;
+}
+.fitbg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.8;
+}
+.about {
+	position: relative;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 75px 0 0;
+}
+.about .contentbox {
+	max-width: 50%;
+	width: 50%;
+	text-align: end;
+	padding-right: 40px;
+}
+.titletext {
+	font-weight: 600;
+	color: #fff;
+	font-size: 2em;
+	margin-bottom: 10px;
+}
+.text {
+	color: #fff;
+	font-size: 1.1em;
+	font-weight: lighter;
+}
+.about .imgbox img {
+    position: relative;
+    min-width: 85%;
+    width: 85%;
+    max-height: 500px;
+    padding: 20px 0 0;
+}
+.banner2 ,
+.banner3 {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 75px 0 0;
+}
+.banner2::before ,
+.banner3::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 400px;
+	z-index: 1;
+	background: linear-gradient(to bottom, #111 ,transparent);
+}
+.banner2::after ,
+.banner3::after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 400px;
+	z-index: 1;
+	background: linear-gradient(to top, #111 ,transparent);
+}
+.services {
+	text-align: center;
+}
+.services .content {
+	text-align: center;
+}
+.services .serviceslist {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 40px;
+}
+.services .serviceslist .box {
+	position: relative;
+	min-width: 350px;
+	height: 480px;
+	background: #191919;
+	margin: 10px;
+	transition: 0.5s;
+}
+.services .serviceslist:hover .box {
+	opacity: 0.2;
+}
+.services .serviceslist .box:hover {
+	opacity: 1;
+}
+.services .serviceslist .box .imgbox {
+	position: relative;
+	width: 100%;
+	height: 400px;
+}
+.services .serviceslist .box .content {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.services .serviceslist .box .content h2 {
+	color: #fff;
+	font-weight: 500;
+	line-height: 1.2em;
+}
+.services .serviceslist .box .content h2 span {
+	font-size: 0.8em;
+	font-weight: 300;
+	opacity: 0.5;
+}
+.footer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.footer ul.sosmed {
+	position: relative;
+	display: flex;
+}
+.footer ul.sosmed li {
+	list-style: none;
+}
+.footer ul.sosmed li a {
+	text-decoration: none; 
+	margin: 0 20px;
+}
+.footer ul.sosmed li a img {
+	filter: invert(1);
+	max-width: 40px;
+	transition: 0.6s;
+}
+.footer ul.sosmed li a:hover img {
+	transform: translateY(-20px);
+}
+.footer ul.sosmed li:nth-child(1) a img {
+	width: 12px;
+}
+.footer ul.sosmed li:nth-child(2) a img {
+	width: 18px;
+}
+.footer ul.sosmed li:nth-child(3) a img {
+	width: 18px;
+}
+.copyright {
+	margin-top: 30px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 300;
+	color: #666;
+	text-align: center;
+}
+.copyright a {
+	color: #fff;
+	text-decoration: none;
+}
+.copyright a:hover {
+	text-decoration: underline;
+}
+@media (max-width: 991px) {
+	.about {
+		flex-direction: column;
+	}
+	.about .contentbox ,
+	.about .imgbox {
+		min-width: 100%;
+		width: 100%;
+		text-align: center;
+		padding: 0;
+	}
+	.about .imgbox {
+		min-height: 250px;
+	}
+}
+@media (max-width: 767px) {
+	section {
+		padding: 40px;
+	}
+	.banner .content h2 {
+		font-size: 2.5em;
+	}
+	.banner .content p {
+		font-size: 0.85em;
+	}
+	.services .serviceslist .box {
+		position: relative;
+		max-width: 350px;
+		min-width: initial;
+		width: 350px;
+		height: 400px;
+	}
+	.services .serviceslist .box .imgbox {
+		height: 320px;
+	}
+}
+@media (max-width: 425px) {
+	.banner .content h2 {
+		font-size: 1.5em;
+	}
+	section {
+		padding: 25px;
+	}
+	.btn {
+		padding: 10px 20px;
+		font-size: 14px;
+	}
+	.header a.logo {
+		font-size: 1em;
+	}
+	.header .toggle img {
+		max-width: 30px;
+		cursor: pointer;
+	}
+	.titletext {
+		font-size: 1.2em;
+	}
+	.text {
+		font-size: 0.8em;
+		font-weight: 300;
+	}
+	.copyright {
+		font-size: 1em;
+	}
+}
